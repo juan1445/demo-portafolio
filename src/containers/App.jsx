@@ -1,10 +1,26 @@
 import React from 'react';
+import Header from '../components/Header';
+import Portfolio from '../components/Portfolio';
+import PortfolioInfo from '../components/PortfolioInfo';
+import Experience from '../components/Experience';
+import ExperienceInfo from '../components/ExperienceInfo';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+
 
 const App = () => {
     return(
-        <div>
-            <h1>Hola Mundo</h1>
-        </div>
+        <React.Fragment>
+            <Header />
+            <Portfolio>
+                <PortfolioInfo />
+            </Portfolio>
+            <Experience>
+                <ExperienceInfo />
+            </Experience>
+            <Contact />
+            <Footer />
+        </React.Fragment>
     );
 }
 
